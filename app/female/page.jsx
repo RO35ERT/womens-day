@@ -1,7 +1,6 @@
 'use client'
 // pages/womens-day.js
 import { useState, useEffect, Suspense } from 'react';
-import { useSearchParams } from 'next/navigation'
 import messages from '../components/mesages';
 
 const getRandomMessage = () => {
@@ -10,9 +9,8 @@ const getRandomMessage = () => {
 };
 
 const WomensDayPage = () => {
-    const searchParams = useSearchParams()
  
-    const gender = searchParams.get('gender');
+    const gender = "female";
 
     const [randomMessage, setRandomMessage] = useState(null);
 
@@ -42,4 +40,3 @@ const WomensDayPage = () => {
   );
 };
 
-export default WomensDayPage;
