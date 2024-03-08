@@ -1,6 +1,6 @@
 'use client'
 // pages/womens-day.js
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation'
 import messages from '../components/mesages';
 
@@ -23,6 +23,7 @@ const WomensDayPage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="p-8 bg-white rounded-md shadow-md text-center">
+        <Suspense>
         {gender === 'female' ? (
           <div>
             <h2 className="text-4xl font-bold mb-4 text-pink-800">
@@ -35,6 +36,7 @@ const WomensDayPage = () => {
             I hope you wished the women in your life a Happy Women's Day!
           </h2>
         )}
+        </Suspense>
       </div>
     </div>
   );
