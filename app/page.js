@@ -11,7 +11,7 @@ const HomePage = () => {
           Choose your gender to receive a special Women's Day message!
         </p>
         <div className="flex justify-center space-x-4">
-          <Link to="/male">
+          {/* <Link to="/male">
             <p className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition duration-300">
               Male
             </p>
@@ -20,7 +20,7 @@ const HomePage = () => {
             <p className="bg-pink-500 text-white px-6 py-3 rounded-md hover:bg-pink-600 transition duration-300">
               Female
             </p>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
